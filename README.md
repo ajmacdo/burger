@@ -2,8 +2,10 @@
 
 page w/ input field and submit button
 
-user types some kind of burger into the input field
+user types some kind of burger into the input field (.val.trim )
 user hits submit button
+
+'put' will change devour from false to true
 
 what was typed is saved in mysql db
 it is also displayed on screen next to input field
