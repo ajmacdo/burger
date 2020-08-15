@@ -3,11 +3,11 @@
 //
 // ******************************************************************************
 // *** Dependencies
-// =============================================================
+// ===============================
 var express = require("express");
-
+var mysql = require("mysql");
 // Sets up the Express App
-// =============================================================
+// =================
 var app = express();
 var PORT = process.env.PORT || 8081;
 
@@ -24,7 +24,7 @@ app.set("view engine", "handlebars");
 // Static directory
 app.use(express.static("public"));
 
-var routes = require("./controllers/burgers_controller")
+var routes = require("./controllers/burgers_controller.js")
 app.use(routes);
 
 // Syncing our sequelize models and then starting our Express app
